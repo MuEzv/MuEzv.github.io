@@ -1,4 +1,8 @@
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert('Thank you for reaching out! I will get back to you soon.');
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 });

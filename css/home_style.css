@@ -22,43 +22,106 @@ body {
 
 /* Header */
 header {
-    background-color: var(--primary-color);
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #2f7167;
+    /* Background color for the header */
+    padding: 0.5rem 1rem;
+    /* Adjust padding for proper spacing */
+    display: flex;
+    /* Use Flexbox for layout */
+    justify-content: space-between;
+    /* Space between logo and nav */
+    align-items: center;
+    /* Center everything vertically */
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+/* Logo */
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
+    font-size: 2rem;
+    /* Adjust font size to fit the layout */
+    font-family: 'UnifrakturMaguntia', cursive;
+    /* Gothic font */
+    color: #fff;
+    margin: 0;
+    /* Remove default margin to fix alignment */
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    /* Align links in a row */
     gap: 1.5rem;
+    /* Add space between links */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    /* Ensure nav links are inline */
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: #fdf6e3;
+    /* Light color for contrast */
     font-weight: bold;
+    font-size: 1rem;
+    /* Adjust font size for balance */
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--accent-color);
+    color: #d4ebd0;
+    /* Hover color */
 }
 
+/* Menu Toggle (Hamburger Menu for Mobile) */
 .menu-toggle {
     display: none;
+    /* Hide by default for desktop */
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-/* Hero Section */
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        /* Show menu toggle on smaller screens */
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide nav links initially */
+        flex-direction: column;
+        /* Stack links vertically */
+        gap: 1rem;
+        /* Add spacing between links */
+        background-color: #2f7167;
+        /* Match header background */
+        position: absolute;
+        top: 100%;
+        /* Position below the header */
+        right: 0;
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+        /* Show nav links when active */
+    }
+}
+
+
 /* Hero Section */
 .hero {
     display: flex;
