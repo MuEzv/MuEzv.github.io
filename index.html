@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Vivian</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/home_style.css">
 </head>
+
 <body>
-  <h1>Hello World</h1>
-    
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Vivian</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <div class="text-content">
+        <h2>Crafting Scalable and Impactful Software Solutions</h2>
+        <p>A dedicated software engineer with experience in full-stack development and cloud-native solutions.</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn">View My Projects</a>
+          <!-- <a href="SDE_Resume_240819.pdf" target="_blank" class="btn btn-outline">Download My Resume</a> -->
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="profile.jpg" alt="Vivian's Profile Picture">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h3>About Me</h3>
+      <p>
+        I'm a software engineer with a Master's in Computer Science Engineering from Santa Clara University.
+        With experience in building scalable back-end systems and responsive web applications, I aim to deliver
+        solutions that make a difference.
+      </p>
+      <p>
+        As a passionate problem-solver, I thrive on collaborating with innovative teams to create impactful software
+        solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h3>Technical Skills</h3>
+      <ul class="skill-list">
+        <li><strong>Languages:</strong> Java, Python, SQL, JavaScript, HTML, CSS, Ruby</li>
+        <li><strong>Frameworks:</strong> React, Flask, Django, SpringBoot, Ruby on Rails</li>
+        <li><strong>Tools:</strong> MySQL, MongoDB, AWS Cloud, Docker, Redis</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h3>Professional Experience</h3>
+      <div class="job">
+        <h4>Software Development Engineer</h4>
+        <p><strong>Chuanzhi Technology Inc. | April 2024 – May 2024</strong></p>
+        <ul>
+          <li>Integrated BaiduMaps and BaiduAI APIs for route planning and license plate recognition with 99.8%
+            accuracy.</li>
+          <li>Implemented optimal path algorithms and back-end billing features to support over 1,000 billing
+            requests/sec.</li>
+          <li>Deployed cloud-native solutions using Kubernetes and Docker for elastic scaling.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h4>Web Developer</h4>
+        <p><strong>Chu Insurance Agency | Oct. 2021 – May 2022</strong></p>
+        <ul>
+          <li>Built a high-performance dynamic website using React and Elasticsearch for enhanced query accuracy.</li>
+          <li>Secured user accounts with JWT tokens for over 5,000 registered users.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="projects-grid">
+        <!-- Left Column: Feature Title -->
+        <div class="projects-title">
+          <h3>Featured Projects</h3>
+          <p>Here are some of my recent projects that showcase my technical expertise and problem-solving skills.</p>
+        </div>
+
+        <!-- Right Column: Project Listings -->
+        <div class="projects-list">
+          <!-- Project 1 -->
+          <div class="project-item">
+            <h4>High-Performance Web Gaming Platform</h4>
+            <p>Handled 10,000+ concurrent users with P99 latency under 1 second, ensuring reliability and speed.</p>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-item">
+            <h4>Distributed KV Storage System</h4>
+            <p>Achieved 20,000 QPS with P99 latency of 800ms using Raft consensus and consistent hashing.</p>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-item">
+            <h4>E-Commerce Website</h4>
+            <p>Built a responsive e-commerce platform with React, Node.js, and Redux for seamless shopping experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3>Contact Me</h3>
+      <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+      <ul>
+        <!-- <li><strong>Email:</strong> <a href="mailto:ziweizhang2024@gmail.com">ziweizhang2024@gmail.com</a></li> -->
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ziweizhangvivi" target="_blank">LinkedIn
+            Profile</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Vivian. Designed with ❤️</p>
+    </div>
+  </footer>
 </body>
+
 </html>
