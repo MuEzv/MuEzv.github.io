@@ -120,13 +120,13 @@ header {
 }
 
 .btn {
-    background-color: #6c63ff;
+    background-color: #20685c;
     color: white;
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #5a52d6;
+    background-color: #76c9b0;
 }
 
 .btn-outline {
@@ -233,7 +233,7 @@ header {
 
 .job h4 {
     font-size: 1.5rem;
-    color: #6c63ff;
+    color: #2caa80;
     margin-bottom: 0.5rem;
 }
 
@@ -259,7 +259,7 @@ header {
 .projects-title h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #6c63ff;
+    color: #1b8048;
     /* Highlighted color */
 }
 
@@ -342,7 +342,7 @@ header {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #6c63ff;
+    background-color: var(--primary-color);
     color: #fff;
     font-size: 0.9rem;
 }
